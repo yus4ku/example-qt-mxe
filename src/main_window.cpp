@@ -30,6 +30,6 @@ void MainWindow::createMenus() {
     QAction *exit_action = new QAction(tr("Exit"), this);
     connect(exit_action, SIGNAL(triggered()), this, SLOT(quit()));
 
-    QMenu *fileMenu = menuBar()->addMenu(tr("File"));
-    fileMenu->addAction(exit_action);
+    QMenu *file_menu = menuBar()->addMenu(tr("File"));
+    file_menu->addAction(exit_action);
 }
